@@ -16,8 +16,9 @@ namespace Bruchrechner
             bruch2.zähler = 1;
             bruch2.nenner = 2;
             
-            rechnen.Addieren(bruch1, bruch2);
-            rechnen.Subtrahieren(bruch1, bruch2);
+            rechnen.Addition(bruch1, bruch2);
+            rechnen.Subtraktion(bruch1, bruch2);
+            rechnen.Multiplikation(bruch1, bruch2);
             Console.ReadKey(true);
         }
     }
