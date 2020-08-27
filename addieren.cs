@@ -3,13 +3,11 @@ using System;
 namespace Bruchrechner
 {
     partial class Main{
-        public void Addieren(ref int zähler, ref int zähler1, ref int nenner, ref int nenner1)
+        public void Addieren(Bruch bruch1, Bruch bruch2)
         {
-            int zählerErgebnis = zähler * nenner1 + zähler1 * nenner;
-            int nennerErgebnis = nenner * nenner1;
-            Console.WriteLine(zählerErgebnis);
-            Console.WriteLine(nennerErgebnis);
-
+            int zählerErgebnis = bruch1.zähler * bruch2.nenner + bruch2.zähler * bruch1.nenner;
+            int nennerErgebnis = bruch1.nenner * bruch2.nenner;
+            Console.WriteLine(zählerErgebnis + "/" + nennerErgebnis);
         }
     }
 }

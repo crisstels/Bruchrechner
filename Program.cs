@@ -6,12 +6,17 @@ namespace Bruchrechner
     {
         static void Main(string[] args)
         {
-            Main bruch = new Main();
-            int zähler1 = 3;
-            int nenner1 = 4;
-            int zähler2 = 1;
-            int nenner2 = 2;
-            bruch.Addieren(ref zähler1,ref zähler2,ref nenner1 ,ref nenner2 );
+            Main addition = new Main();
+            Bruch bruch1 = new Bruch();
+            Bruch bruch2 = new Bruch();
+
+            bruch1.zähler = 3;
+            bruch1.nenner = 4;
+
+            bruch2.zähler = 1;
+            bruch2.nenner = 2;
+            
+            addition.Addieren(bruch1, bruch2);
             Console.ReadKey(true);
         }
     }
