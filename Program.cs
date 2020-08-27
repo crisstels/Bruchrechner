@@ -6,7 +6,7 @@ namespace Bruchrechner
     {
         static void Main(string[] args)
         {
-            Main addition = new Main();
+            Main rechnen = new Main();
             Bruch bruch1 = new Bruch();
             Bruch bruch2 = new Bruch();
 
@@ -16,7 +16,8 @@ namespace Bruchrechner
             bruch2.zähler = 1;
             bruch2.nenner = 2;
             
-            addition.Addieren(bruch1, bruch2);
+            rechnen.Addieren(bruch1, bruch2);
+            rechnen.Subtrahieren(bruch1, bruch2);
             Console.ReadKey(true);
         }
     }
