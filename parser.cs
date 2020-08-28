@@ -3,9 +3,8 @@ using System;
 namespace Bruchrechner
 {
     partial class Main{
-
-        public bool check_integer(int zahl){
-
+        /* Überprüft, ob die Eingabe des Users vom Typ Int32 ist */
+        public bool überprüfeEingabe(int zahl){
 
             Type check = zahl.GetType();
 

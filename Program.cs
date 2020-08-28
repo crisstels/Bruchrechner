@@ -4,6 +4,7 @@ namespace Bruchrechner
 {
     class Program
     {
+        /* Hauptprogramm des Bruchrechners */
         static void Main(string[] args)
         {
             Main rechnen = new Main();
