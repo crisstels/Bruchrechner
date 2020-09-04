@@ -11,11 +11,11 @@ namespace Bruchrechner
             Bruch bruch1 = new Bruch();
             Bruch bruch2 = new Bruch();
 
-            bruch1.zähler = 3;
-            bruch1.nenner = 4;
+            rechnen.Bruch_EingabeFormat();
 
-            bruch2.zähler = 1;
-            bruch2.nenner = 2;
+            rechnen.Bruch_eingeben(ref bruch1, ref bruch2);
+
+            Console.WriteLine("Zähler: " + bruch1.zähler);
             
             rechnen.Addition(bruch1, bruch2);
             rechnen.Subtraktion(bruch1, bruch2);
