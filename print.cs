@@ -35,7 +35,10 @@ namespace Bruchrechner
             bruch2.zähler = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("D = ");
             bruch2.nenner = Convert.ToInt32(Console.ReadLine());
+        }
 
+        public void Ergebnis_ausgeben(Bruch ergebnis){
+            Console.WriteLine(ergebnis.zähler + "/" + ergebnis.nenner);
         }
 
     }

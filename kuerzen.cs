@@ -27,8 +27,9 @@ namespace Bruchrechner
             return zähler;
         }
         /* Kürzt einen Bruch */
-        public void kürzen(Bruch ergebnis, int ggT)
+        public void kürzen(ref Bruch ergebnis)
         {
+            int ggT = euklid(ergebnis.zähler, ergebnis.nenner);
             ergebnis.zähler = ergebnis.zähler / ggT;
             ergebnis.nenner = ergebnis.nenner / ggT;
         }
