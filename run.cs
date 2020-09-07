@@ -9,7 +9,12 @@ namespace Bruchrechner
         public void run(ref Bruch bruch1, ref Bruch bruch2, ref Bruch ergebnis){
             Main rechnen = new Main();
 
+            while (true){
+
             int op = rechnen.Menu();
+            if(op == 5){
+                break;
+            }
             rechnen.Bruch_EingabeFormat();
             rechnen.Bruch_eingeben(ref bruch1, ref bruch2);
 
@@ -33,6 +38,9 @@ namespace Bruchrechner
 
             rechnen.kürzen(ref ergebnis);
             rechnen.Ergebnis_ausgeben(ergebnis);
+            Console.ReadKey(true);
+
+            }
         }
 
 

@@ -14,7 +14,6 @@ namespace Bruchrechner
             
             rechnen.run(ref bruch1, ref bruch2, ref ergebnis);
 
-            Console.ReadKey(true);
         }
     }
 }
