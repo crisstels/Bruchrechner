@@ -12,7 +12,7 @@ namespace Bruchrechner
             Console.WriteLine("2 für Subtraktion (-)");
             Console.WriteLine("3 für Multiplikation (*)");
             Console.WriteLine("4 für Division (/)");
-            Console.WriteLine("5 um das Programm zu beenden");
+            Console.WriteLine("5 um das Programm zu beenden" + "\n");
             int op = Convert.ToInt32(Console.ReadLine());
 
             return op;
@@ -22,12 +22,12 @@ namespace Bruchrechner
             Console.WriteLine("Bitte geben Sie zwei Brüche ein!");
             Console.WriteLine("Eingabeformat:");
             Console.WriteLine("A    C");
-            Console.WriteLine("-    -");
-            Console.WriteLine("B    D");
+            Console.WriteLine("-  , -");
+            Console.WriteLine("B    D" + "\n");
         }
 
         public void Bruch_eingeben(ref Bruch bruch1, ref Bruch bruch2){
-            Console.WriteLine("A = ");
+            Console.WriteLine("A = " + "\t");
             bruch1.zähler = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("B = ");
             bruch1.nenner = Convert.ToInt32(Console.ReadLine());
@@ -38,6 +38,7 @@ namespace Bruchrechner
         }
 
         public void Ergebnis_ausgeben(Bruch ergebnis){
+            Console.WriteLine("Ergebnis: ");
             Console.WriteLine(ergebnis.zähler + "/" + ergebnis.nenner);
         }
 
