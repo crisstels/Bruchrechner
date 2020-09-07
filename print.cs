@@ -1,11 +1,34 @@
 using System;
-
+// ฅ^•ﻌ•^ฅ
+// ٩ʕ•͡×•ʔ۶
 namespace Bruchrechner
 {
     partial class Main{
+        /* Gibt Daten oder Informationen auf der Konsole aus */
 
-        /* Gibt Daten auf der Konsole aus */
+        public void Intro(){
+            Console.WriteLine("          _________ ");
+            Console.WriteLine("         | ________ |");
+            Console.WriteLine("         ||12345678||");
+            Console.WriteLine("         |----------|");
+            Console.WriteLine("         |[M|#|C][-]|");
+            Console.WriteLine("         |[7|8|9][+]|");
+            Console.WriteLine("         |[4|5|6][x]|");
+            Console.WriteLine("         |[1|2|3][%]|");
+            Console.WriteLine("         |[.|O|:][=]|");
+            Console.WriteLine("          _________ ");
 
+        }
+        public void Splash(){
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("Titel: Bruchrechner");
+            Console.WriteLine("Beschreibung: Einfacher Bruchrechner, welcher 2 Brüche miteinander verrechnet und das Ergebnis kürzt.");
+            Console.WriteLine("Autor: Natalie Hasselmann  ʕ•ᴥ•ʔ");
+            Intro();
+            Console.WriteLine("\n" + "Drücken Sie eine beliebige Taste zum fortfahren" + "\n");
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.ReadKey(true);
+        }
         public int Menu(){
             Console.WriteLine("Welche Operation möchten Sie ausführen? Drücken Sie die");
             Console.WriteLine("1 für Addition (+)");

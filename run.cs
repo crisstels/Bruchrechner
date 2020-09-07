@@ -9,6 +9,8 @@ namespace Bruchrechner
         public void run(ref Bruch bruch1, ref Bruch bruch2, ref Bruch ergebnis){
             Main rechnen = new Main();
 
+            rechnen.Splash();
+
             while (true){
 
             int op = rechnen.Menu();
