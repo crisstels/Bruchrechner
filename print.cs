@@ -20,13 +20,13 @@ namespace Bruchrechner
 
         }
         public void Splash(){
-            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
             Console.WriteLine("Titel: Bruchrechner");
             Console.WriteLine("Beschreibung: Einfacher Bruchrechner, welcher 2 Brüche miteinander verrechnet und das Ergebnis kürzt.");
             Console.WriteLine("Autor: Natalie Hasselmann  ʕ•ᴥ•ʔ");
             Intro();
             Console.WriteLine("\n" + "Drücken Sie eine beliebige Taste zum fortfahren" + "\n");
-            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
             Console.ReadKey(true);
         }
         public int Menu(){
@@ -60,9 +60,20 @@ namespace Bruchrechner
             bruch2.nenner = Convert.ToInt32(Console.ReadLine());
         }
 
+        public void Bruch_ausgeben(Bruch bruch1, Bruch bruch2){
+            Console.WriteLine("Sie haben folgende Brüche eingegeben: ");            
+            Console.WriteLine(bruch1.zähler + "    " + bruch2.zähler);
+            Console.WriteLine("-  , -");
+            Console.WriteLine(bruch1.nenner + "    " + bruch2.nenner + "\n");
+            
+
+        }
+
         public void Ergebnis_ausgeben(Bruch ergebnis){
             Console.WriteLine("Ergebnis: ");
-            Console.WriteLine(ergebnis.zähler + "/" + ergebnis.nenner);
+            Console.WriteLine(ergebnis.zähler);
+            Console.WriteLine("-");
+            Console.WriteLine(ergebnis.nenner + "\n");
         }
 
     }

@@ -19,6 +19,7 @@ namespace Bruchrechner
             }
             rechnen.Bruch_EingabeFormat();
             rechnen.Bruch_eingeben(ref bruch1, ref bruch2);
+            rechnen.Bruch_ausgeben(bruch1, bruch2);
 
             switch(op){
                 case 1:
