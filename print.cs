@@ -1,6 +1,4 @@
 using System;
-// ฅ^•ﻌ•^ฅ
-// ٩ʕ•͡×•ʔ۶
 namespace Bruchrechner
 {
     partial class Main{
@@ -50,28 +48,31 @@ namespace Bruchrechner
         }
 
         public void Bruch_eingeben(ref Bruch bruch1, ref Bruch bruch2){
+            Main rechnen = new Main();
+
             Console.WriteLine("A = " + "\t");
-            bruch1.zähler = Convert.ToInt32(Console.ReadLine());
+            bruch1.zaehler = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("B = ");
-            bruch1.nenner = Convert.ToInt32(Console.ReadLine());
+            rechnen.Ueberpruefe_nenner(ref bruch1);
             Console.WriteLine("C = ");
-            bruch2.zähler = Convert.ToInt32(Console.ReadLine());
+            bruch2.zaehler = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("D = ");
-            bruch2.nenner = Convert.ToInt32(Console.ReadLine());
+            rechnen.Ueberpruefe_nenner(ref bruch2);
         }
 
         public void Bruch_ausgeben(Bruch bruch1, Bruch bruch2){
             Console.WriteLine("Sie haben folgende Brüche eingegeben: ");            
-            Console.WriteLine(bruch1.zähler + "    " + bruch2.zähler);
+            Console.WriteLine(bruch1.zaehler + "    " + bruch2.zaehler);
             Console.WriteLine("-  , -");
             Console.WriteLine(bruch1.nenner + "    " + bruch2.nenner + "\n");
+            Console.WriteLine("Drücken Sie eine beliebeige Taste zum fortfahren...");
             
 
         }
 
         public void Ergebnis_ausgeben(Bruch ergebnis){
             Console.WriteLine("Ergebnis: ");
-            Console.WriteLine(ergebnis.zähler);
+            Console.WriteLine(ergebnis.zaehler);
             Console.WriteLine("-");
             Console.WriteLine(ergebnis.nenner + "\n");
         }

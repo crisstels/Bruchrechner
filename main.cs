@@ -1,6 +1,4 @@
 ﻿using System;
-// TODO: nenner = 0 Überprüfung
-// TODO: reset structs
 
 namespace Bruchrechner
 {

@@ -27,10 +27,10 @@ namespace Bruchrechner
             return zähler;
         }
         /* Kürzt einen Bruch */
-        public void kürzen(ref Bruch ergebnis)
+        public void Kuerzen(ref Bruch ergebnis)
         {
-            int ggT = euklid(ergebnis.zähler, ergebnis.nenner);
-            ergebnis.zähler = ergebnis.zähler / ggT;
+            int ggT = euklid(ergebnis.zaehler, ergebnis.nenner);
+            ergebnis.zaehler = ergebnis.zaehler / ggT;
             ergebnis.nenner = ergebnis.nenner / ggT;
         }
     }

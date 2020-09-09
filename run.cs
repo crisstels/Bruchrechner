@@ -39,7 +39,7 @@ namespace Bruchrechner
                     break;
             }
 
-            rechnen.kürzen(ref ergebnis);
+            rechnen.Kuerzen(ref ergebnis);
             rechnen.Ergebnis_ausgeben(ergebnis);
             Console.ReadKey(true);
 
