@@ -1,8 +1,8 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Title: Calculator for fractions
-Description: A simple Calculator for fractions. It returns the shoertend result.
-Auhor: Natalie Hasselmann  ʕ•ᴥ•ʔ
+Title: Calculator for fractions<br/>
+Description: A simple Calculator for fractions. It returns the shoertend result.<br/>
+Author: Natalie Hasselmann  ʕ•ᴥ•ʔ<br/>
 
                          __________
                         | ________ |
