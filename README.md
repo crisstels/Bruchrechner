@@ -1,7 +1,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Title: Calculator for fractions<br/>
-Description: A simple Calculator for fractions. It returns the shoertend result.<br/>
+Description: A simple Calculator for fractions. It returns the shortened result.<br/>
 Author: Natalie Hasselmann  ʕ•ᴥ•ʔ<br/>
 
                          __________
